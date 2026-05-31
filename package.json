@@ -1,0 +1,27 @@
+{
+  "name": "iris",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": "true",
+  "workspaces": [
+    "web",
+    "mobile"
+  ],
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "eas-cli": "^20.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.3",
+    "supabase": "^2.102.0",
+    "turbo": "^2.9.16",
+    "typescript": "^5.9.3"
+  }
+}
