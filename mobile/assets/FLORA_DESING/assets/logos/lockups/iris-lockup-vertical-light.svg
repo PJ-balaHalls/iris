@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1800" viewBox="0 0 1600 1800" fill="none">
+  <title>IRÍS Vertical Lockup</title>
+  <desc>Lockup vertical da marca IRÍS.</desc>
+  <rect width="1600" height="1800" fill="#FAF7F2"/>
+  <g transform="translate(440 120) scale(0.703125)">
+  <title>IRÍS Emblem</title>
+  <desc>Emblema floral editorial do IRÍS.</desc>
+  <rect width="1024" height="1024" rx="260" fill="none"/>
+  <rect x="278" y="122" width="468" height="780" rx="230" stroke="#B9995A" stroke-width="18"/>
+  <path d="M512 214L523.5 252.5L562 264L523.5 275.5L512 314L500.5 275.5L462 264L500.5 252.5L512 214Z" fill="#B9995A"/>
+  <path d="M512 678C512 617 512 561 512 509" stroke="#B9995A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M512 515C472 469 443 414 452 356C496 369 521 412 512 515Z" stroke="#B9995A" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M512 515C552 469 581 414 572 356C528 369 503 412 512 515Z" stroke="#B9995A" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M512 514C486 454 486 399 512 346C538 399 538 454 512 514Z" stroke="#B9995A" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M512 642C464 600 408 589 354 614C415 639 465 650 512 642Z" stroke="#B9995A" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M512 642C560 600 616 589 670 614C609 639 559 650 512 642Z" stroke="#B9995A" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M512 678C493 722 465 756 428 783" stroke="#B9995A" stroke-width="15" stroke-linecap="round"/>
+  <path d="M512 678C531 722 559 756 596 783" stroke="#B9995A" stroke-width="15" stroke-linecap="round"/>
+</g>
+  <text x="800" y="1365" text-anchor="middle" font-family="Playfair Display, Didot, Bodoni 72, Georgia, serif" font-size="268" letter-spacing="18" fill="#183A2E">IRÍS</text>
+  <text x="800" y="1462" text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="42" letter-spacing="2" fill="#4D4D4D">um lugar para guardar histórias, criar vínculos e preservar o que importa</text>
+</svg>

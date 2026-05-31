@@ -1,0 +1,28 @@
+:root {
+  --iris-color-background: #FAF7F2;
+  --iris-color-surface: #FFFFFF;
+  --iris-color-text-primary: #183A2E;
+  --iris-color-text-dark: #111111;
+  --iris-color-text-secondary: #4D4D4D;
+  --iris-color-text-muted: #6B6B6B;
+  --iris-color-accent-gold: #B9995A;
+  --iris-color-accent-gold-soft: #D8C39A;
+  --iris-color-emotion-lilac: #9A7CA7;
+  --iris-color-border: #E0DDD6;
+  --iris-color-dark-background: #111111;
+  --iris-color-dark-surface: #1C1C1C;
+  --iris-color-dark-text: #FAF7F2;
+
+  --iris-font-display: 'Playfair Display', 'Didot', 'Bodoni 72', 'Georgia', serif;
+  --iris-font-body: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+
+  --iris-radius-sm: 8px;
+  --iris-radius-md: 12px;
+  --iris-radius-lg: 16px;
+  --iris-radius-xl: 24px;
+  --iris-radius-full: 999px;
+
+  --iris-shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --iris-shadow-md: 0 4px 8px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --iris-shadow-lg: 0 10px 20px rgba(0,0,0,0.10);
+}

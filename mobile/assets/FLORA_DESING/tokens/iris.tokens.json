@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "name": "IRÍS Brand Tokens",
+    "version": "1.0.0"
+  },
+  "color": {
+    "background": "#FAF7F2",
+    "surface": "#FFFFFF",
+    "textPrimary": "#183A2E",
+    "textDark": "#111111",
+    "textSecondary": "#4D4D4D",
+    "textMuted": "#6B6B6B",
+    "accentGold": "#B9995A",
+    "accentGoldSoft": "#D8C39A",
+    "emotionLilac": "#9A7CA7",
+    "border": "#E0DDD6",
+    "darkBackground": "#111111",
+    "darkSurface": "#1C1C1C",
+    "darkText": "#FAF7F2"
+  },
+  "fontFamily": {
+    "display": "'Playfair Display', 'Didot', 'Bodoni 72', 'Georgia', serif",
+    "body": "'Inter', 'Helvetica Neue', 'Arial', sans-serif"
+  },
+  "fontSize": {
+    "h1": "40px",
+    "h2": "32px",
+    "h3": "24px",
+    "bodyLg": "18px",
+    "body": "16px",
+    "bodySm": "14px",
+    "caption": "12px"
+  },
+  "lineHeight": {
+    "display": 1.2,
+    "body": 1.5,
+    "compact": 1.4
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "24px",
+    "full": "999px"
+  },
+  "spacing": {
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "6": "24px",
+    "8": "32px",
+    "12": "48px",
+    "16": "64px"
+  },
+  "shadow": {
+    "sm": "0 1px 2px rgba(0,0,0,0.05)",
+    "md": "0 4px 8px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05)",
+    "lg": "0 10px 20px rgba(0,0,0,0.10)"
+  }
+}
