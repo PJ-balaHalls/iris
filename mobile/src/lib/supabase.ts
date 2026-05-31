@@ -1,45 +1,22 @@
-// mobile/src/lib/supabase.ts
-import "react-native-url-polyfill/auto";
+import 'react-native-url-polyfill/auto';
+import * as SecureStore from 'expo-secure-store';
+import { createClient } from '@supabase/supabase-js';
 
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import {
-  createClient,
-  processLock,
-  type SupabaseClient
-} from "@supabase/supabase-js";
-import { AppState, Platform } from "react-native";
+const ExpoSecureStoreAdapter = {
+  getItem: (key: string) => SecureStore.getItemAsync(key),
+  setItem: (key: string, value: string) => SecureStore.setItemAsync(key, value),
+  removeItem: (key: string) => SecureStore.deleteItemAsync(key),
+};
 
-import { env, isSupabaseConfigured } from "@/config/env";
+// Se não encontrar o .env, usa placeholders provisórios apenas para não "crachar" a UI
+const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
 
-function createIrisSupabaseClient(): SupabaseClient {
-  return createClient(env.SUPABASE_URL, env.SUPABASE_PUBLISHABLE_KEY, {
-    auth: {
-      ...(Platform.OS !== "web" ? { storage: AsyncStorage } : {}),
-      autoRefreshToken: true,
-      persistSession: true,
-      detectSessionInUrl: false,
-      lock: processLock
-    }
-  });
-}
-
-export const supabase: SupabaseClient | null = isSupabaseConfigured
-  ? createIrisSupabaseClient()
-  : null;
-
-export function registerSupabaseAppStateListener(): () => void {
-  if (Platform.OS === "web" || !supabase) {
-    return () => undefined;
-  }
-
-  const subscription = AppState.addEventListener("change", (state) => {
-    if (state === "active") {
-      void supabase.auth.startAutoRefresh();
-      return;
-    }
-
-    void supabase.auth.stopAutoRefresh();
-  });
-
-  return () => subscription.remove();
-}
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    storage: ExpoSecureStoreAdapter,
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: false,
+  },
+});
