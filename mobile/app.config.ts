@@ -1,6 +1,9 @@
 // mobile/app.config.ts
-import "dotenv/config";
 import type { ConfigContext, ExpoConfig } from "expo/config";
+import * as dotenv from "dotenv";
+
+dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env" });
 
 const readSupabaseUrl = () =>
   process.env.EXPO_PUBLIC_SUPABASE_URL ??
